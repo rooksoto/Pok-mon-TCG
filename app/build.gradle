@@ -38,7 +38,6 @@ def navVersion = '2.1.0-alpha05'
 def preferencesVersion = '1.1.1'
 
 dependencies {
-    // TODO: Clean this up, update without breaking
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
