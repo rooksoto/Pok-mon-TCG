@@ -1,4 +1,4 @@
-package com.rooksoto.pokmontcgcardviewer
+package com.rooksoto.pokemontcgcardviewer
 
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import androidx.test.platform.app.InstrumentationRegistry

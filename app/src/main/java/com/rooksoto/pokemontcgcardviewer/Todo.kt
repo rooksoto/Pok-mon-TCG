@@ -1,4 +1,4 @@
-package com.rooksoto.pokmontcgcardviewer
+package com.rooksoto.pokemontcgcardviewer
 
 // List global To Do items here so they show up in AS tool window
 

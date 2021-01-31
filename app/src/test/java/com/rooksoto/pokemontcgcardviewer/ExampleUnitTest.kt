@@ -1,4 +1,4 @@
-package com.rooksoto.pokmontcgcardviewer
+package com.rooksoto.pokemontcgcardviewer
 
 import org.junit.Test
 

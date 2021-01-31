@@ -1,7 +1,8 @@
-package com.rooksoto.pokmontcgcardviewer
+package com.rooksoto.pokemontcgcardviewer.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.rooksoto.pokemontcgcardviewer.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
