@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/listFragment"
+    >
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.rooksoto.pokemontcgcardviewer.view.ListFragment"
+        android:label="ListFragment"
+        >
+        <action
+            android:id="@+id/action_listFragment_to_cardDetailFragment"
+            app:destination="@id/cardDetailFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cardDetailFragment"
+        android:name="com.rooksoto.pokemontcgcardviewer.view.CardDetailFragment"
+        android:label="CardDetailFragment"
+        >
+        <action
+            android:id="@+id/action_cardDetailFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            />
+    </fragment>
+</navigation>
