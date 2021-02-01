@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home_navigation"
-    app:startDestination="@id/listFragment"
-    >
+    app:startDestination="@id/listFragment">
 
     <fragment
         android:id="@+id/listFragment"
         android:name="com.rooksoto.pokemontcgcardviewer.view.ListFragment"
         android:label="ListFragment"
-        >
+        tools:layout="@layout/fragment_list">
         <action
-            android:id="@+id/action_listFragment_to_cardDetailFragment"
-            app:destination="@id/cardDetailFragment"
-            />
+            android:id="@+id/actionListFragmentToCardDetailFragment"
+            app:destination="@id/cardDetailFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/cardDetailFragment"
         android:name="com.rooksoto.pokemontcgcardviewer.view.CardDetailFragment"
         android:label="CardDetailFragment"
-        >
+        tools:layout="@layout/fragment_card_detail">
         <action
-            android:id="@+id/action_cardDetailFragment_to_listFragment"
-            app:destination="@id/listFragment"
-            />
+            android:id="@+id/actionCardDetailFragmentToListFragment"
+            app:destination="@id/listFragment" />
     </fragment>
 </navigation>
