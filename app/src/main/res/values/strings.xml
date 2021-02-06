@@ -1,7 +1,13 @@
 <resources>
     <!-- App Name -->
     <string name="app_name">Pokémon TCG Card Viewer</string>
-    <!--**********-->
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Content Descriptions -->
+    <string name="content_description_card_image">Card Image</string>
+
+    <!-- UI Strings -->
+    <string name="low_price_label">Low</string>
+    <string name="mid_price_label">Mid</string>
+    <string name="high_price_label">High</string>
+    <string name="market_price_label">Market</string>
 </resources>
