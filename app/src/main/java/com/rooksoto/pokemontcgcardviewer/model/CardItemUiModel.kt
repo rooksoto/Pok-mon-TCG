@@ -5,7 +5,7 @@ data class CardItemUiModel(
     val cardImageLargeUrl: String?,
     val cardImageSmallUrl: String?,
     val name: String?,
-    val ability: String?,
+    val abilityName: String?,
     val abilityDescription: String?,
     val priceLow: Double?,
     val priceMid: Double?,
