@@ -52,11 +52,11 @@ class CardListFragment : Fragment() {
         viewModel.cardsUiModels.observe(
             viewLifecycleOwner,
             { cardItemUiModels ->
+                cardListAdapter.updateCardList(cardItemUiModels)
                 binding?.apply {
                     listErrorView.errorViewAnimation.isVisible = false
                     listLoadingView.loadingViewAnimation.isVisible = false
                 }
-                cardListAdapter.updateCardList(cardItemUiModels)
             }
         )
 
@@ -65,7 +65,6 @@ class CardListFragment : Fragment() {
             { isError ->
                 binding?.apply {
                     listErrorView.errorViewRoot.isVisible = isError
-                    listLoadingView.loadingViewAnimation.isVisible = false
                 }
             }
         )
@@ -74,7 +73,6 @@ class CardListFragment : Fragment() {
             viewLifecycleOwner,
             { isLoading ->
                 binding?.apply {
-                    listErrorView.errorViewRoot.isVisible = false
                     listLoadingView.loadingViewAnimation.isVisible = isLoading
                 }
             }

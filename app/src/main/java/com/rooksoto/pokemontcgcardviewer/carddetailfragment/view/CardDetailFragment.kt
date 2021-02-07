@@ -1,10 +1,11 @@
-package com.rooksoto.pokemontcgcardviewer.view
+package com.rooksoto.pokemontcgcardviewer.carddetailfragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.rooksoto.pokemontcgcardviewer.cardlistfragment.view.CardDetailFragmentArgs
 import com.rooksoto.pokemontcgcardviewer.databinding.FragmentCardDetailBinding
 
 class CardDetailFragment : Fragment() {

@@ -5,7 +5,6 @@
     >
 
     <LinearLayout
-
         android:id="@+id/error_view_root"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

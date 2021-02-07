@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.rooksoto.pokemontcgcardviewer.R
 import com.rooksoto.pokemontcgcardviewer.model.CardItemUiModel
@@ -48,6 +49,10 @@ class CardListAdapter(
             )
 
         fun bind(uiModel: CardItemUiModel) = with(view) {
+            setOnClickListener {
+                Navigation.findNavController(this).navigate(CardListFragmentDirections.actionListFragmentToCardDetailFragment())
+            }
+
             findViewById<ImageView>(R.id.card_item_image).setBackgroundColor(
                 getRandomColor()
             )

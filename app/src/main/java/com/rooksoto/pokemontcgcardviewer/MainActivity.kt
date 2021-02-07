@@ -1,4 +1,4 @@
-package com.rooksoto.pokemontcgcardviewer.view
+package com.rooksoto.pokemontcgcardviewer
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

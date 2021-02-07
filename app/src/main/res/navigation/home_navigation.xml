@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.rooksoto.pokemontcgcardviewer.view.CardListFragment"
+        android:name="com.rooksoto.pokemontcgcardviewer.cardlistfragment.view.CardListFragment"
         android:label="ListFragment"
         tools:layout="@layout/fragment_card_list"
         >
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/cardDetailFragment"
-        android:name="com.rooksoto.pokemontcgcardviewer.view.CardDetailFragment"
+        android:name="com.rooksoto.pokemontcgcardviewer.carddetailfragment.view.CardDetailFragment"
         android:label="CardDetailFragment"
         tools:layout="@layout/fragment_card_detail"
         >

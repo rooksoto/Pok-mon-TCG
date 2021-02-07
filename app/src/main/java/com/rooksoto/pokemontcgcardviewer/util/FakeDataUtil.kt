@@ -1,6 +1,6 @@
 package com.rooksoto.pokemontcgcardviewer.util
 
-import com.rooksoto.pokemontcgcardviewer.model.CardItemUiModel
+import com.rooksoto.pokemontcgcardviewer.cardlistfragment.model.CardItemUiModel
 import java.util.*
 
 class FakeDataUtil {
@@ -20,8 +20,7 @@ class FakeDataUtil {
 
         val cardItemUiModel1 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
-            cardImageLargeUrl = null,
-            cardImageSmallUrl = null,
+            cardImageUrl = null,
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.",
@@ -32,8 +31,7 @@ class FakeDataUtil {
         )
         val cardItemUiModel2 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
-            cardImageLargeUrl = null,
-            cardImageSmallUrl = null,
+            cardImageUrl = null,
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
@@ -44,8 +42,7 @@ class FakeDataUtil {
         )
         val cardItemUiModel3 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
-            cardImageLargeUrl = null,
-            cardImageSmallUrl = null,
+            cardImageUrl = null,
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
@@ -56,8 +53,7 @@ class FakeDataUtil {
         )
         val cardItemUiModel4 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
-            cardImageLargeUrl = null,
-            cardImageSmallUrl = null,
+            cardImageUrl = null,
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
@@ -68,8 +64,7 @@ class FakeDataUtil {
         )
         val cardItemUiModel5 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
-            cardImageLargeUrl = null,
-            cardImageSmallUrl = null,
+            cardImageUrl = null,
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
@@ -80,8 +75,7 @@ class FakeDataUtil {
         )
         val cardItemUiModel6 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
-            cardImageLargeUrl = null,
-            cardImageSmallUrl = null,
+            cardImageUrl = null,
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
@@ -92,8 +86,7 @@ class FakeDataUtil {
         )
         val cardItemUiModel7 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
-            cardImageLargeUrl = null,
-            cardImageSmallUrl = null,
+            cardImageUrl = null,
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
