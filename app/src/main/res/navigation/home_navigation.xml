@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.rooksoto.pokemontcgcardviewer.view.ListFragment"
+        android:name="com.rooksoto.pokemontcgcardviewer.view.CardListFragment"
         android:label="ListFragment"
         tools:layout="@layout/fragment_list"
         >
