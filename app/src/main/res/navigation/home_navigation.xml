@@ -11,7 +11,7 @@
         android:id="@+id/listFragment"
         android:name="com.rooksoto.pokemontcgcardviewer.view.CardListFragment"
         android:label="ListFragment"
-        tools:layout="@layout/fragment_list"
+        tools:layout="@layout/fragment_card_list"
         >
         <action
             android:id="@+id/actionListFragmentToCardDetailFragment"

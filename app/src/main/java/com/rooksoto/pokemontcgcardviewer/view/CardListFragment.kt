@@ -8,24 +8,28 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.rooksoto.pokemontcgcardviewer.databinding.FragmentListBinding
+import com.rooksoto.pokemontcgcardviewer.databinding.FragmentCardListBinding
 import com.rooksoto.pokemontcgcardviewer.viewmodel.CardListViewModel
 
 class CardListFragment : Fragment() {
 
     private lateinit var viewModel: CardListViewModel
 
-    private var binding: FragmentListBinding? = null
+    private var binding: FragmentCardListBinding? = null
 
     private val cardListAdapter = CardListAdapter(mutableListOf())
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        val nullableBinding = FragmentListBinding.inflate(inflater, container, false)
-        binding = nullableBinding
-        return nullableBinding.root
+    ): View = FragmentCardListBinding.inflate(
+        inflater,
+        container,
+        false
+    ).let {
+        binding = it
+        it.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
