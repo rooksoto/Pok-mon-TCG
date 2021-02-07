@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
-import com.rooksoto.pokemontcgcardviewer.R
 
 class MainActivity : AppCompatActivity() {
 

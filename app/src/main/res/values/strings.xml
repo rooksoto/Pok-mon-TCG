@@ -10,4 +10,6 @@
     <string name="mid_price_label">Mid</string>
     <string name="high_price_label">High</string>
     <string name="market_price_label">Market</string>
+    <string name="hp">hp</string>
+    <string name="type">Type</string>
 </resources>

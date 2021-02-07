@@ -7,6 +7,7 @@ import com.rooksoto.pokemontcgcardviewer.util.FakeDataUtil
 
 class CardListViewModel : ViewModel() {
 
+    // TODO: Use a UIModel Mapper here
     val cardsUiModels = MutableLiveData<List<CardItemUiModel>>()
     val cardsLoadError = MutableLiveData<Boolean>()
     val loading = MutableLiveData<Boolean>()

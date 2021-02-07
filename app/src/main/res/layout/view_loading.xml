@@ -8,7 +8,6 @@
         android:id="@+id/loading_view_animation"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:visibility="gone"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/loading"

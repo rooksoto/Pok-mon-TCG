@@ -7,13 +7,16 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
         >
 
+        <!-- TODO: Set contentView to name programmatically -->
         <ImageView
+            android:id="@+id/card_image"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@id/guideline_vertical_center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@id/prices"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -28,15 +31,78 @@
             app:layout_constraintGuide_percent=".5"
             />
 
+
+        <FrameLayout
+            android:id="@+id/prices"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_vertical_center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline_vertical_center"
+            />
+
+        <!-- TODO: Set cardBackgroundColor to type color programmatically -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/bottom_card"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:cardBackgroundColor="@android:color/holo_red_dark"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
             app:cardCornerRadius="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/guideline_vertical_center"
-            />
+            app:layout_constraintTop_toBottomOf="@id/prices"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="44sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Rook"
+                    />
+
+                <TextView
+                    android:id="@+id/hp_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="serif"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/name"
+                    app:layout_constraintStart_toStartOf="@id/name"
+                    app:layout_constraintTop_toBottomOf="@id/name"
+                    tools:text="120 hp"
+                    />
+
+                <!-- TODO: Add ContentDescription to type Programmatically -->
+                <ImageView
+                    android:id="@+id/type_image"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:contentDescription="@string/type"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/hp_value"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

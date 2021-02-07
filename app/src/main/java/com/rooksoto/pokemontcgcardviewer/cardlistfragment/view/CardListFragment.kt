@@ -13,11 +13,10 @@ import com.rooksoto.pokemontcgcardviewer.databinding.FragmentCardListBinding
 
 class CardListFragment : Fragment() {
 
-    private lateinit var viewModel: CardListViewModel
-
     private var binding: FragmentCardListBinding? = null
-
     private val cardListAdapter = CardListAdapter(mutableListOf())
+
+    private lateinit var viewModel: CardListViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
