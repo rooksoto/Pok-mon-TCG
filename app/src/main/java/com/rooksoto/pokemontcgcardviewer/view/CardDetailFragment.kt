@@ -5,21 +5,35 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.rooksoto.pokemontcgcardviewer.R
+import com.rooksoto.pokemontcgcardviewer.databinding.FragmentCardDetailBinding
 
 class CardDetailFragment : Fragment() {
 
     private var cardId: String? = ""
+    private var binding: FragmentCardDetailBinding? = null
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         arguments?.let {
             cardId = CardDetailFragmentArgs.fromBundle(it).cardId
         }
 
-        return inflater.inflate(R.layout.fragment_card_detail, container, false)
+        return FragmentCardDetailBinding.inflate(
+            inflater,
+            container,
+            false
+        ).let {
+            binding = it
+            it.root
+        }
+    }
+
+    override fun onDestroyView() {
+        binding = null
+        super.onDestroyView()
     }
 }
