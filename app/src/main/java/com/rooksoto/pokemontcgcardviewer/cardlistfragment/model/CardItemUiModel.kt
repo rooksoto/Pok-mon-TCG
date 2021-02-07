@@ -1,9 +1,8 @@
-package com.rooksoto.pokemontcgcardviewer.model
+package com.rooksoto.pokemontcgcardviewer.cardlistfragment.model
 
 data class CardItemUiModel(
     val cardId: String?,
-    val cardImageLargeUrl: String?,
-    val cardImageSmallUrl: String?,
+    val cardImageUrl: String?,
     val name: String?,
     val abilityName: String?,
     val abilityDescription: String?,

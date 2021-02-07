@@ -1,4 +1,4 @@
-package com.rooksoto.pokemontcgcardviewer.view
+package com.rooksoto.pokemontcgcardviewer.cardlistfragment.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.rooksoto.pokemontcgcardviewer.cardlistfragment.viewmodel.CardListViewModel
 import com.rooksoto.pokemontcgcardviewer.databinding.FragmentCardListBinding
-import com.rooksoto.pokemontcgcardviewer.viewmodel.CardListViewModel
 
 class CardListFragment : Fragment() {
 

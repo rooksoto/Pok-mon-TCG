@@ -1,8 +1,8 @@
-package com.rooksoto.pokemontcgcardviewer.viewmodel
+package com.rooksoto.pokemontcgcardviewer.cardlistfragment.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.rooksoto.pokemontcgcardviewer.model.CardItemUiModel
+import com.rooksoto.pokemontcgcardviewer.cardlistfragment.model.CardItemUiModel
 import com.rooksoto.pokemontcgcardviewer.util.FakeDataUtil
 
 class CardListViewModel : ViewModel() {

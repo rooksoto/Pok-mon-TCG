@@ -1,4 +1,4 @@
-package com.rooksoto.pokemontcgcardviewer.view
+package com.rooksoto.pokemontcgcardviewer.cardlistfragment.view
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.rooksoto.pokemontcgcardviewer.R
-import com.rooksoto.pokemontcgcardviewer.model.CardItemUiModel
+import com.rooksoto.pokemontcgcardviewer.cardlistfragment.model.CardItemUiModel
 
 
 class CardListAdapter(
@@ -50,7 +50,8 @@ class CardListAdapter(
 
         fun bind(uiModel: CardItemUiModel) = with(view) {
             setOnClickListener {
-                Navigation.findNavController(this).navigate(CardListFragmentDirections.actionListFragmentToCardDetailFragment())
+                Navigation.findNavController(this)
+                    .navigate(CardListFragmentDirections.actionListFragmentToCardDetailFragment())
             }
 
             findViewById<ImageView>(R.id.card_item_image).setBackgroundColor(
