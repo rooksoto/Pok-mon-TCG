@@ -21,7 +21,7 @@ class FakeDataUtil {
             cardImageSmallUrl = null,
             name = "Rook",
             abilityName = "The Moves.",
-            abilityDescription = "I got the moves like Jagger.,",
+            abilityDescription = "I got the moves like Jagger.",
             priceLow = 1.00,
             priceMid = 2.00,
             priceHigh = 5.00,

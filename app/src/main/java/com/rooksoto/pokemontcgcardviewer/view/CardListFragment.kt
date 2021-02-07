@@ -49,7 +49,6 @@ class CardListFragment : Fragment() {
             viewLifecycleOwner,
             { cardItemUiModels ->
                 binding?.apply {
-                    cardList.isVisible = true
                     listErrorView.errorViewAnimation.isVisible = false
                     listLoadingView.loadingViewAnimation.isVisible = false
                 }
@@ -61,7 +60,6 @@ class CardListFragment : Fragment() {
             viewLifecycleOwner,
             { isError ->
                 binding?.apply {
-                    cardList.isVisible = false
                     listErrorView.errorViewRoot.isVisible = isError
                     listLoadingView.loadingViewAnimation.isVisible = false
                 }
@@ -72,7 +70,6 @@ class CardListFragment : Fragment() {
             viewLifecycleOwner,
             { isLoading ->
                 binding?.apply {
-                    cardList.isVisible = false
                     listErrorView.errorViewRoot.isVisible = false
                     listLoadingView.loadingViewAnimation.isVisible = isLoading
                 }
