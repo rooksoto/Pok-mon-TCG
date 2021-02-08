@@ -1,6 +1,5 @@
 package com.rooksoto.pokemontcgcardviewer.cardlistfragment.view
 
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.rooksoto.pokemontcgcardviewer.R
 import com.rooksoto.pokemontcgcardviewer.cardlistfragment.model.CardItemUiModel
+import com.rooksoto.pokemontcgcardviewer.util.cardImageProgressDrawable
 
 
 class CardListAdapter(
@@ -59,7 +59,8 @@ class CardListAdapter(
                 uiModel.cardImageUrl
             ) {
                 crossfade(true)
-                // TODO: Placeholder?
+                placeholder(cardImageProgressDrawable(context))
+                error(R.drawable.ic_launcher_foreground)
             }
 
             findViewById<TextView>(R.id.card_item_name).text =
