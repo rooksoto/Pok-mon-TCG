@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
@@ -42,6 +43,14 @@ class CardListFragment : Fragment() {
                 layoutManager = LinearLayoutManager(context)
                 adapter = cardListAdapter
             }
+
+            refreshLayout.setOnRefreshListener {
+                refreshLayout.isRefreshing = false
+                cardList.isInvisible = true
+                errorView.errorViewRoot.isVisible = false
+                loadingView.loadingViewAnimation.isVisible = true
+                viewModel.refresh()
+            }
         }
 
         observeViewModel()
@@ -53,8 +62,9 @@ class CardListFragment : Fragment() {
             { cardItemUiModels ->
                 cardListAdapter.updateCardList(cardItemUiModels)
                 binding?.apply {
-                    listErrorView.errorViewAnimation.isVisible = false
-                    listLoadingView.loadingViewAnimation.isVisible = false
+                    cardList.isInvisible = false
+                    errorView.errorViewRoot.isVisible = false
+                    loadingView.loadingViewAnimation.isVisible = false
                 }
             }
         )
@@ -63,7 +73,8 @@ class CardListFragment : Fragment() {
             viewLifecycleOwner,
             { isError ->
                 binding?.apply {
-                    listErrorView.errorViewRoot.isVisible = isError
+                    errorView.errorViewRoot.isVisible = isError
+                    loadingView.loadingViewAnimation.isVisible = false
                 }
             }
         )
@@ -72,7 +83,7 @@ class CardListFragment : Fragment() {
             viewLifecycleOwner,
             { isLoading ->
                 binding?.apply {
-                    listLoadingView.loadingViewAnimation.isVisible = isLoading
+                    loadingView.loadingViewAnimation.isVisible = isLoading
                 }
             }
         )

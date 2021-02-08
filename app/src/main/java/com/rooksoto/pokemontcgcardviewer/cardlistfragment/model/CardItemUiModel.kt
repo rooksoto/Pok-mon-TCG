@@ -6,8 +6,8 @@ data class CardItemUiModel(
     val name: String?,
     val abilityName: String?,
     val abilityDescription: String?,
-    val priceLow: Double?,
-    val priceMid: Double?,
-    val priceHigh: Double?,
-    val priceMarket: Double?
+    val priceLow: String,
+    val priceMid: String,
+    val priceHigh: String,
+    val priceMarket: String
 )

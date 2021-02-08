@@ -24,10 +24,10 @@ class FakeDataUtil {
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.",
-            priceLow = 1.00,
-            priceMid = 2.00,
-            priceHigh = 5.00,
-            priceMarket = 4.00
+            priceLow = "1.00",
+            priceMid = "2.00",
+            priceHigh = "5.00",
+            priceMarket = "4.00"
         )
         val cardItemUiModel2 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
@@ -35,10 +35,10 @@ class FakeDataUtil {
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
-            priceLow = 1.00,
-            priceMid = 2.00,
-            priceHigh = 5.00,
-            priceMarket = 4.00
+            priceLow = "1.00",
+            priceMid = "2.00",
+            priceHigh = "5.00",
+            priceMarket = "4.00"
         )
         val cardItemUiModel3 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
@@ -46,10 +46,10 @@ class FakeDataUtil {
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
-            priceLow = 1.00,
-            priceMid = 2.00,
-            priceHigh = 5.00,
-            priceMarket = 4.00
+            priceLow = "1.00",
+            priceMid = "2.00",
+            priceHigh = "5.00",
+            priceMarket = "4.00"
         )
         val cardItemUiModel4 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
@@ -57,10 +57,10 @@ class FakeDataUtil {
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
-            priceLow = 1.00,
-            priceMid = 2.00,
-            priceHigh = 5.00,
-            priceMarket = 4.00
+            priceLow = "1.00",
+            priceMid = "2.00",
+            priceHigh = "5.00",
+            priceMarket = "4.00"
         )
         val cardItemUiModel5 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
@@ -68,10 +68,10 @@ class FakeDataUtil {
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
-            priceLow = 1.00,
-            priceMid = 2.00,
-            priceHigh = 5.00,
-            priceMarket = 4.00
+            priceLow = "1.00",
+            priceMid = "2.00",
+            priceHigh = "5.00",
+            priceMarket = "4.00"
         )
         val cardItemUiModel6 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
@@ -79,10 +79,10 @@ class FakeDataUtil {
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
-            priceLow = 1.00,
-            priceMid = 2.00,
-            priceHigh = 5.00,
-            priceMarket = 4.00
+            priceLow = "1.00",
+            priceMid = "2.00",
+            priceHigh = "5.00",
+            priceMarket = "4.00"
         )
         val cardItemUiModel7 = CardItemUiModel(
             cardId = UUID.randomUUID().toString(),
@@ -90,10 +90,10 @@ class FakeDataUtil {
             name = "Rook",
             abilityName = "The Moves.",
             abilityDescription = "I got the moves like Jagger.,",
-            priceLow = 1.00,
-            priceMid = 2.00,
-            priceHigh = 5.00,
-            priceMarket = 4.00
+            priceLow = "1.00",
+            priceMid = "2.00",
+            priceHigh = "5.00",
+            priceMarket = "4.00"
         )
     }
 }

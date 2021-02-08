@@ -25,7 +25,7 @@
                 />
 
             <include
-                android:id="@+id/list_loading_view"
+                android:id="@+id/loading_view"
                 layout="@layout/view_loading"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
@@ -36,7 +36,7 @@
                 />
 
             <include
-                android:id="@+id/list_error_view"
+                android:id="@+id/error_view"
                 layout="@layout/view_error"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
