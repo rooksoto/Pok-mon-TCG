@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.rooksoto.pokemontcgcardviewer.R
 import com.rooksoto.pokemontcgcardviewer.cardlistfragment.model.CardItemUiModel
 
@@ -54,25 +55,26 @@ class CardListAdapter(
                     .navigate(CardListFragmentDirections.actionListFragmentToCardDetailFragment())
             }
 
-            findViewById<ImageView>(R.id.card_item_image).setBackgroundColor(
-                getRandomColor()
-            )
+            findViewById<ImageView>(R.id.card_item_image).load(
+                uiModel.cardImageUrl
+            ) {
+                crossfade(true)
+                // TODO: Placeholder?
+            }
+
             findViewById<TextView>(R.id.card_item_name).text =
                 uiModel.name
             findViewById<TextView>(R.id.card_item_ability_description).text =
                 uiModel.abilityDescription
 
             findViewById<TextView>(R.id.card_item_price_low).text =
-                uiModel.priceLow.toString()
+                uiModel.priceLow
             findViewById<TextView>(R.id.card_item_price_mid).text =
-                uiModel.priceMid.toString()
+                uiModel.priceMid
             findViewById<TextView>(R.id.card_item_price_high).text =
-                uiModel.priceHigh.toString()
+                uiModel.priceHigh
             findViewById<TextView>(R.id.card_item_price_market).text =
-                uiModel.priceMarket.toString()
+                uiModel.priceMarket
         }
-
-        private fun getRandomColor(): Int =
-            Color.parseColor(colorList.random())
     }
 }
